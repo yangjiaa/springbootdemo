@@ -46,6 +46,7 @@ public class UserController {
     {
         userJPA.deleteById(id);
         System.currentTimeMillis();
+        System.out.println("12");
         return userJPA.findAll();
     }
 
