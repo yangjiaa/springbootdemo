@@ -45,6 +45,7 @@ public class UserController {
     public List<UserEntity> delete(Long id)
     {
         userJPA.deleteById(id);
+        System.currentTimeMillis();
         return userJPA.findAll();
     }
 
